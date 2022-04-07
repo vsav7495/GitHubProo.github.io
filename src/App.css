@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
+/*padding: 10px;
+border: 1px solid black;*/
+.wrapper {
+    display: grid;
+    grid-template-columns: 1600px;
+    grid-template-rows: repeat(6, 1342px); /*1600X8052*/
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.photoHeader{
+    position: absolute;
+    width: 1865px;
+    height: 1243px;
+    margin-top: -149px;
+    margin-left: -262px;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.headerTextWeb {
+    position: absolute;
+    width: 753px;
+    height: 93px;
+    margin-top: 501px;
+    margin-left: 424px;
 }
 
-.App-link {
-  color: #61dafb;
+.buttonLearnMore {
+    position: absolute;
+    width: 186px;
+    height: 56px;
+    margin-top: 639px;
+    margin-left: 708px;
+    background: unset;
+    border-color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.TextOnButtonLearnMore {
+    color: white;
+    font-size: large;
 }
+
+.aboutMe {
+
+}
+
+.resume {
+
+}
+
+.portfolio {
+
+}
+
+.contactMe {
+
+}
+
+.footer {
+
+}
+
+
+
+
