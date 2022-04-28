@@ -1,19 +1,24 @@
+
 .item{
-    border: 1px solid black;
-
-
+    border: 0px solid black;
 }
-.container{
+.wrapper{
     display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 1600px;
+    justify-content: center;
+}
+.containerAboutMe{
+    display: grid;
     grid-template-areas:
             'photoHeader photoHeader photoHeader'
             'headerNavMenu headerNavMenu headerNavMenu'
             'aboutMeOne aboutMeTwo aboutMeThree'
-            'nameBirthday myEducation myEducation'
-            'photoAboutMe photoAboutMe photoAboutMe'
-            'resume resume resume'
+            'photoAboutMe myEducation myEducation'
+            'resume resume resume';
+}
+.containerSkills{
+    display: grid;
+    grid-template-columns: 300px 650px 650px;
+    grid-template-areas:
             'skillsProfExperience skillsProfExperDescription skillsProfExperDescription'
             'skillsTechnologies skillsTechnologDescription skillsTechnologDescription'
             'skillsDevTools skillsDevToolsDescription skillsDevToolsDescription'
@@ -24,56 +29,167 @@
             'contactMe contactMeForm contactMeForm'
             'foot foot foot';
 }
+
 .photoHeader{
     grid-area: photoHeader;
-    width: 1865px;
+    width: 1600px;
     height: 1219px;
+    /*margin: auto;*/
+}
+.headerTextWeb {
+    position: absolute;
+    width: 750px;
+    height: 90px;
+    margin-left: 500px;
+    margin-top: 750px;
+}
+.buttonLearnMore {
+    position: absolute;
+    width: 186px;
+    height: 56px;
+    margin-top: 900px;
+    margin-left: 750px;
+    background: unset;
+    border-color: white;
+}
+.TextOnButtonLearnMore {
+    color: white;
+    font-size: large;
 }
 .photoHome{
-    width: 1865px;
+    width: 1600px;
     height: 1219px;
+}
+.logoPhoto{
+    position: absolute;
+    margin-left: 100px;
+    height: 50px;
+    margin-top: 10px;
+}
+.logoLinkedIn{
+    position: absolute;
+    margin-left: 135px;
+    margin-top: 25px;
+}
+.name{
+    position: absolute;
+    margin-left: 200px;
+    margin-top: 20px;
+}
+.nameText{
+    color: white;
+    font-family: "Arial";
+    font-size: xx-large;
 }
 .headerNavMenu{
     grid-area: headerNavMenu;
+    height: 70px;
+    background: #252d2f;
+}
+.ulNav {
+    list-style-type: none;
+    margin-left: 750px;
+}
+.liNav {
+    float: left;
+    margin-right: 20px;
+}
+.liNav a {
+    display: block;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+.liNav a:hover {
+    color: #2ecc71;
 }
 .aboutMeOne{
     grid-area: aboutMeOne;
+    padding-top: 20px;
+    text-align: center;
+    width: 700px;
+    height: 150px;
 }
 .aboutMeTwo{
     grid-area: aboutMeTwo;
+    padding-top: 20px;
+    text-align: center;
+    width: 450px;
+    height: 150px;
 }
 .aboutMeThree{
     grid-area: aboutMeThree;
+    padding-top: 20px;
+    text-align: center;
+    width: 450px;
+    height: 150px;
 }
-.nameBirthday{
-    grid-area: nameBirthday;
+.textAboutMe{
+    font-style: italic;
+    font-size: 30px;
 }
 .photoAboutMe{
     grid-area: photoAboutMe;
+    width: 700px;
+    height: 1047px;
 }
 .myEducation{
     grid-area: myEducation;
+    background-color: #f2f2f1;
+    width: 900px;
+}
+.containerTextMyEducation{
+    margin-top: 50px;
+    margin-left: 50px;
 }
 .resume{
     grid-area: resume;
+    width: 1600px;
 }
+.textResume {
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 750px;
+    font-size: 25px;
+}
+.containerTextResume{
+    position: absolute;
+    width: 1200px;
+    margin-top: 80px;
+    margin-left: 200px;
+}
+.textUnderResume {
+    position: absolute;
+    text-align: center;
+    font-size: 20px;
+}
+.buttonDownloadResume {
+    position: absolute;
+    width: 215px;
+    height: 56px;
+    margin-top: 300px;
+    margin-left: 700px;
+    background: unset;
+    border-color: #2ecc71;
+    color: #2ecc71;
+    font-size: large;
+}
+
 .skillsProfExperience{
     grid-area: skillsProfExperience;
+    width: 300px;
+    height: 225px;
 }
 .skillsProfExperDescription{
     grid-area: skillsProfExperDescription;
 }
-.skillsTechnologies{
-    grid-area: skillsTechnologies;
+.ulProf {
+    list-style-type: none;
+    font-size: 20px;
+
 }
-.skillsTechnologDescription{
-    grid-area: skillsTechnologDescription;
-}
-.skillsDevTools{
-    grid-area: skillsDevTools;
-}
-.skillsDevToolsDescription{
-    grid-area: skillsDevToolsDescription;
+.liProf {
+
 }
 .skillsCourseSql{
     grid-area: skillsCourseSql;
@@ -81,9 +197,71 @@
 .skillsCourseSqlDescription{
     grid-area: skillsCourseSqlDescription;
 }
+.ulCourse {
+    list-style-type: none;
+    font-size: 20px;
+
+}
+.liCourse {
+
+}
+.skillsTechnologies{
+    grid-area: skillsTechnologies;
+}
+.skillsTechnologDescription{
+    grid-area: skillsTechnologDescription;
+}
+.ulTech {
+    list-style-type: none;
+    font-size: 20px;
+
+}
+.liTech {
+
+}
+.skillsDevTools{
+    grid-area: skillsDevTools;
+}
+.skillsDevToolsDescription{
+    grid-area: skillsDevToolsDescription;
+}
+.ulDev {
+    list-style-type: none;
+    font-size: 20px;
+
+}
+.liDev {
+
+}
+
 .testimonials{
     grid-area: testimonials;
+    background-color: #f2f2f1;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-style: italic;
+    font-size: 30px;
+    height: 420px;
+
 }
+.pagination {
+    position: absolute;
+    display: inline-block;
+    margin-top: 200px;
+}
+.pagination a {
+    float: left;
+    padding: 0px 0px;
+    margin-left: 10px;
+    text-decoration: none;
+    border: 1px solid #2ecc71;
+    border-radius: 100px;
+}
+.pagination a.active {
+    background-color: #2ecc71;
+}
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
 .portfolioGreenHorn{
     grid-area: portfolioGreenHorn;
 }
@@ -112,87 +290,6 @@
     grid-area: foot;
 }
 
-/*
-{!*PHOTO HEADER*!}
-.photoHeader{
-    position: absolute;
-    width: 1865px;
-    height: 1219px;!*1243*!
-    margin-top: -149px;
-    margin-left: -262px;
-
-}
-
-.headerTextWeb {
-    position: absolute;
-    width: 753px;
-    height: 93px;
-    margin-top: 501px;
-    margin-left: 424px;
-}
-
-.buttonLearnMore {
-    position: absolute;
-    width: 186px;
-    height: 56px;
-    margin-top: 639px;
-    margin-left: 708px;
-    background: unset;
-    border-color: white;
-}
-
-.TextOnButtonLearnMore {
-    color: white;
-    font-size: large;
-}
-{!*NAVIGATION MENU*!}
-.headerNavMenu {
-    position: absolute;
-    width: 1602px;
-    height: 70px;
-    margin-top: 1000px;
-    margin-left: -2px;
-    background: #252d2f;
-}
-.navList{
-    position: absolute;
-}
-ul {
-    list-style-type: none;
-    margin-left: 750px;
-
-
-}
-li {
-    float: left;
-    margin-right: 20px;
-
-
-}
-.logoFocal{
-    position: absolute;
-    margin-left: 220px;
-    margin-top: 15px;
-}
-li a {
-    display: block;
-    color: white;
-    padding: 10px;
-    text-decoration: none;
-
-}
-
-li a:hover {
-    color: #2ecc71;
-
-}
-!*ABOUTME*!
-.aboutMe{
-    position: absolute;
-    width: 1600px; !*1875px;*!
-    height: 1226px;
-}
-*/
 
 
 
