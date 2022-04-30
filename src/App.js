@@ -7,7 +7,7 @@ const App = () => {
   return (
       <div className={"wrapper"}>
          <div className={"containerAboutMe"}>
-              <div className={"item photoHeader"}>
+              <div className={"photoHeader"}>
                   <img  className={"headerTextWeb"} src={"HeaderWebDev.png"}/>
                   <button className={"buttonLearnMore"}>
                       <text className={"TextOnButtonLearnMore"}>LEARN MORE</text>
@@ -21,7 +21,7 @@ const App = () => {
                           <img  className={"logoLinkedIn"} src={"photolinkedin.png"}/>
                       </a>
                       <div className={"name"}>
-                          <text className={"nameText"}>Vasyl Moseychuk</text>
+                          <text className={"nameText"}>Developer</text>
                       </div>
                   </div>
                   <ul className={"ulNav"}>
@@ -34,36 +34,34 @@ const App = () => {
                       <li  className={"liNav"}><a href="#contactMe">CONTACT ME</a></li>
                   </ul>
               </div>
-              <div className={"item aboutMeOne"}>
+              <div className={"aboutMeOne"}>
                   <text className={"textAboutMe"}>Life is like a combination lock; your job is to find the numbers, in the right orders, so you can have anything you want. Brian Tracy ”</text>
               </div>
-              <div className={"item aboutMeTwo"}>
+              <div className={"aboutMeTwo"}>
                   <text className={"textAboutMe"}><p>I enjoy my work</p></text>
               </div>
-              <div className={"item aboutMeThree"}>
+              <div className={"aboutMeThree"}>
                   <text className={"textAboutMe"}><p>I love board games</p> </text>
               </div>
-              <div className={"item myEducation"}>
-                  <div className={"containerTextMyEducation"}>
-                      <text  style={{ fontSize: '40px' }}>
-                          <text style={{ marginLeft:'200px' }}> MY EDUCATION </text>
-                          <p>Transcarpathian State University</p>
-                          <p >Department of Information Control Systems and Technologies</p>
-                          <p style={{ marginTop: '100px' }}>2005 - 2009</p>
-                          <p style={{ margin: '50px' }}>Bachelor degree in Computer Science</p>
-                          <p>2009 - 2010</p>
-                          <p style={{ margin: '50px' }}>Specialist degree in Computer Science</p>
-                          <p style={{marginTop:'100px',}}>English: Pre - Intermidiate</p>
-                      </text>
-                  </div>
+              <div className={"myEducation"}>
+                  <ul className={"ulEducation"}>
+                      <li style={{marginLeft:'250px'}} className={"liEducation"}>MY EDUCATION</li>
+                      <li style={{fontWeight:'bold', marginTop:'100px'}} className={"liEducation"}> State University</li>
+                      <li  className={"liEducation"}>Department of Information Control Systems and Technologies</li>
+                      <li style={{marginLeft:'50px', fontWeight:'bold',marginTop:'100px'}} className={"liEducation"}>2005 - 2009</li>
+                      <li  className={"liEducation"}>Bachelor degree in Computer Science</li>
+                      <li style={{marginLeft:'50px', fontWeight:'bold'}} className={"liEducation"}>2009 - 2010</li>
+                      <li  className={"liEducation"}>Specialist degree in Computer Scienc</li>
+                      <li style={{fontWeight:'bold', marginTop:'100px'}} className={"liEducation"}>English: Pre - Intermidiate</li>
+                  </ul>
               </div>
-              <div className={"item photoAboutMe"}>
+              <div className={"photoAboutMe"}>
                       <img  src={"photoAboutMe.png"}/>
               </div>
-              <div className={"item resume"}>
+              <div className={"resume"}>
                   <text className={"textResume"}>RESUME</text>
                   <div className={"containerTextResume"}>
-                      <text className={"textUnderResume"}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</text>
+                      <text>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</text>
                   </div>
                   <button className={"buttonDownloadResume"}>
                       <text>DOWNLOAD RESUME</text>
@@ -72,17 +70,17 @@ const App = () => {
               </div>
       </div>
           <div className={"containerSkills"}>
-              <div className={"item skillsProfExperience"}>PROFESSIONAL EXPERIENCE</div>
-              <div className={"item skillsProfExperDescription"}>
+              <div className={"skillsProfExperience"}>PROFESSIONAL EXPERIENCE</div>
+              <div className={"skillsProfExperDescription"}>
                       <ul className={"ulProf"}>
-                          <li className={"liProf"}>November 2019 - July 2020, software company “Star Apps”</li>
+                          <li className={"liProf"}>November 2019 - July 2020, software company “Company”</li>
                           <li className={"liProf"}>ReactJS Developer:</li>
                           <li className={"liProf"}>Development of geolocation service for tracking ships routes and
                               arrival - departure time.</li>
                           <li className={"liProf"}>React Native Developer:</li>
                           <li className={"liProf"}>Development of social network experience exchange of sportsman
                               and scouts.</li>
-                          <li className={"liProf"}>May 2019 - November 2019, software company “Star Apps”</li>
+                          <li className={"liProf"}>May 2019 - November 2019, software company “Company”</li>
                           <li className={"liProf"}>IOS Developer:</li>
                           <li className={"liProf"}>Development of mobile applications for social networks
                               (programming client API and user interface).</li>
@@ -90,79 +88,157 @@ const App = () => {
                               (online store, mobile platform for finding services and customers)</li>
                       </ul>
               </div>
-              <div className={"item skillsCourseSql"}>COURSE SQL</div>
-              <div className={"item skillsCourseSqlDescription"}>
+              <div className={"skillsCourseSql"}>
+                  <p>COURSE SQL</p>
+                  <a href="#certificateSQL">
+                      <img className={"certificateLogo"} src={"certificateSQL.png"}/>
+                  </a>
+              </div>
+              <div className={"skillsCourseSqlDescription"}>
                   <ul className={"ulCourse"}>
-                      <li className={"liCourse"}>November 2019 - July 2020, software company “Star Apps”</li>
-                      <li className={"liCourse"}>ReactJS Developer:</li>
-                      <li className={"liCourse"}>Development of geolocation service for tracking ships routes and
-                          arrival - departure time.</li>
-                      <li className={"liCourse"}>React Native Developer:</li>
-                      <li className={"liCourse"}>Development of social network experience exchange of sportsman
-                          and scouts.</li>
-                      <li className={"liCourse"}>May 2019 - November 2019, software company “Star Apps”</li>
-                      <li className={"liCourse"}>IOS Developer:</li>
-                      <li className={"liCourse"}>Development of mobile applications for social networks
-                          (programming client API and user interface).</li>
-                      <li className={"liCourse"}>Development of e-commerce application for private entrepreneurs
-                          (online store, mobile platform for finding services and customers)</li>
+                      <li className={"liCourse"}>13.09.2020 - 21.10.2020 Course Sql </li>
+                      <li className={"liCourse"}>Выборка данных</li>
+                      <li className={"liCourse"}>Сортировка выбранных данных</li>
+                      <li className={"liCourse"}>Фильтрация данных</li>
+                      <li className={"liCourse"}>Расширенная фильтрация данных</li>
+                      <li className={"liCourse"}>Использование метасимволов для фильтрации</li>
+                      <li className={"liCourse"}>Создание вычисляемых полей</li>
+                      <li className={"liCourse"}>Итоговые данные</li>
+                      <li className={"liCourse"}>Использование подзапросов</li>
+                      <li className={"liCourse"}>Объединение таблиц</li>
+                      <li className={"liCourse"}>Создание расширенных объединений</li>
+                      <li className={"liCourse"}>Комбинированные запросы</li>
+                      <li className={"liCourse"}>Добавление данных</li>
+                      <li className={"liCourse"}>Обновление и удаление данных</li>
+                      <li className={"liCourse"}>Создание таблиц и работа с ними</li>
+                      <li className={"liCourse"}>Работа с хранимыми процедурами</li>
+                      <li className={"liCourse"}>Обработка транзакций</li>
+                      <li className={"liCourse"}>Использование курсоров</li>
                   </ul>
               </div>
-              <div className={"item skillsTechnologies"}>TECHNOLOGIES</div>
-              <div className={"item skillsTechnologDescription"}>
+              <div className={"skillsTechnologies"}>TECHNOLOGIES</div>
+              <div className={"skillsTechnologDescription"}>
                   <ul className={"ulTech"}>
-                      <li className={"liTech"}>November 2019 - July 2020, software company “Star Apps”</li>
-                      <li className={"liTech"}>ReactJS Developer:</li>
-                      <li className={"liTech"}>Development of geolocation service for tracking ships routes and
-                          arrival - departure time.</li>
-                      <li className={"liTech"}>React Native Developer:</li>
-                      <li className={"liTech"}>Development of social network experience exchange of sportsman
-                          and scouts.</li>
-                      <li className={"liTech"}>May 2019 - November 2019, software company “Star Apps”</li>
-                      <li className={"liTech"}>IOS Developer:</li>
-                      <li className={"liTech"}>Development of mobile applications for social networks
-                          (programming client API and user interface).</li>
-                      <li className={"liTech"}>Development of e-commerce application for private entrepreneurs
-                          (online store, mobile platform for finding services and customers)</li>
+                      <li className={"liTech"}>Objective-C:</li>
+                      <li className={"liTech"}>AutoLayout</li>
+                      <li className={"liTech"}>UIkit</li>
+                      <li className={"liTech"}>Swift:</li>
+                      <li className={"liTech"}>Alomofire</li>
+                      <li className={"liTech"}>UIkit</li>
+                      <li className={"liTech"}>AutoLayout</li>
+                      <li className={"liTech"}>FireBase</li>
+                      <li className={"liTech"}>Push Notifications</li>
+                      <li className={"liTech"}>React Native/ReactJS:</li>
+                      <li className={"liTech"}>Redux</li>
                   </ul>
               </div>
-              <div className={"item skillsDevTools"}>DEVELOPMENT TOOLS</div>
-              <div className={"item skillsDevToolsDescription"}>
+              <div className={"skillsDevTools"}>DEVELOPMENT TOOLS</div>
+              <div className={"skillsDevToolsDescription"}>
                   <ul className={"ulDev"}>
-                      <li className={"liDev"}>November 2019 - July 2020, software company “Star Apps”</li>
-                      <li className={"liDev"}>ReactJS Developer:</li>
-                      <li className={"liDev"}>Development of geolocation service for tracking ships routes and
-                          arrival - departure time.</li>
-                      <li className={"liDev"}>React Native Developer:</li>
-                      <li className={"liDev"}>Development of social network experience exchange of sportsman
-                          and scouts.</li>
-                      <li className={"liDev"}>May 2019 - November 2019, software company “Star Apps”</li>
-                      <li className={"liDev"}>IOS Developer:</li>
-                      <li className={"liDev"}>Development of mobile applications for social networks
-                          (programming client API and user interface).</li>
-                      <li className={"liDev"}>Development of e-commerce application for private entrepreneurs
-                          (online store, mobile platform for finding services and customers)</li>
+                      <li className={"liDev"}>Xcode</li>
+                      <li className={"liDev"}>Xcode development tools</li>
+                      <li className={"liDev"}>Cocoapods</li>
+                      <li className={"liDev"}>Git (SourceTree, GitHub Desktop, Git Smart)</li>
+                      <li className={"liDev"}>WebStorm</li>
+                      <li className={"liDev"}>Visual Studio Code</li>
+                      <li className={"liDev"}>Postman</li>PostgreSQL
+                      <li className={"liDev"}>PostgreSQL</li>
+                      <li className={"liDev"}>SQL Server Management Studio</li>
                   </ul>
               </div>
-              <div className={"item testimonials"}>
-                  <text>
-                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                      and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                  </text>
-                  <div className="pagination">
-                          <a className={"active"} href="#"><text style={{opacity: '0%'}}>❮</text></a>
-                          <a href="#"><text style={{opacity: '0%'}}>❯</text></a>
+              <div className={"testimonials"}>
+                  <img  className={"testimonialsPhoto1"} src={"logoPhoto1.png"}/>
+                  <div className={"containerTextTestimonials"}>
+                      <text>
+                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                          and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                      </text>
+                  </div>
+                  <div className="containerPagination">
+                      <a href="#"><span className={"activePagination"}></span></a>
+                      <a href="#"><span style={{marginLeft:'20px'}} className={"circlePagination"}></span></a>
                   </div>
               </div>
-              <div className={"item portfolioGreenHorn"}>portfolioGreenHorn</div>
-              <div className={"item portfolioLLOOK"}>portfolioLLOOK</div>
-              <div className={"item portfolioHublish"}>portfolioHublish</div>
-              <div className={"item portfolioDigibarber"}>portfolioDigibarber</div>
-              <div className={"item portfolioEcoKos"}>portfolioEcoKos</div>
-              <div className={"item portfolioZenyk"}>portfolioZenyk</div>
-              <div className={"item contactMe"}>contactMe</div>
-              <div className={"item contactMeForm"}>contactMeForm</div>
-              <div className={"item foot"}>foot</div>
+          </div>
+          <div className={"containerPortfolio"}>
+              <div className={"portfolio"}>
+                  <div className={"containerTextPortfolio"}>
+                      <p style={{fontWeight:'bold', fontSize:'30px'}}>PORTFOLIO</p>
+                      <text>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                          when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                      </text>
+                  </div>
+              </div>
+              <div className={"portfolioGreenHorn"}>
+                  <a href="#portfolioGreenHorn">
+                      <img src={"greenHorn.png"}/>
+                  </a>
+              </div>
+              <div className={"portfolioLLOOK"}>
+                  <a href="#portfolioLLOOK">
+                      <img src={"llok.png"}/>
+                  </a>
+              </div>
+              <div className={"portfolioHublish"}>
+                  <a href="#portfolioHublish">
+                      <img src={"hublish.png"}/>
+                  </a>
+              </div>
+              <div className={"portfolioDigibarber"}>
+                  <a href="#portfolioDigibarber">
+                      <img src={"digibarber.png"}/>
+                  </a>
+              </div>
+              <div className={"portfolioEcoKos"}>
+                  <a href="#portfolioEcoKos">
+                      <img src={"organic.png"}/>
+                  </a>
+              </div>
+              <div className={"portfolioGalBud"}>
+                  <a href="#portfolioGalBud">
+                      <img src={"galBud.png"}/>
+                  </a>
+              </div>
+          </div>
+          <div className={"containerContact"}>
+              <div className={"contactMe"}>
+                  <ul className={"ulContactMe"}>
+                      <li style={{color:'white', fontSize:'xx-large'}} className={"liContactMe"}> CONTACT ME</li>
+                      <li style={{marginTop:'20px'}} className={"liContactMe"}>
+                          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                          when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                      </li>
+                      <li style={{marginTop:'20px'}} className={"liContactMe"}>122 33rd Street East</li>
+                      <li className={"liContactMe"}>Saskatoon, SK</li>
+                      <li style={{marginTop:'20px'}} className={"liContactMe"}><text style={{color:'white'}}>Email:   </text> info@gmail.com</li>
+                      <li className={"liContactMe"}><text style={{color:'white'}}>Phone:  </text>Phone: 1-306-222-2323</li>
+                      <li className={"liContactMe"}><text style={{color:'white'}}>Skype:  </text> InfoSkype</li>
+                  </ul>
+              </div>
+              <div className={"contactMeForm"}>
+                  <form>
+                      <label htmlFor="text">Name*</label>
+                      <input type="text" name="name"/>
+                        <label>Email*</label>
+                      <input type="email" name="email"/>
+                        <label>Your message*</label>
+                      <textarea name="message" rows="10" ></textarea>
+                      <button className={"buttonForm"} type="submit">CONTACT ME</button>
+                  </form>
+              </div>
+              <div className={"foot"}>
+                  <div style={{marginBottom:'30px', marginTop:'50px'}}>COPYRIGHT 2022 BUILD WITH PASSION</div>
+                  <a href="#linkedIn">
+                      <img src={"photolinkedin.png"}/>
+                  </a>
+                  <a href="#facebook">
+                      <img style={{marginLeft:'10px'}} src={"facebookIcon.png"}/>
+                  </a>
+                  <a href="#twitter">
+                      <img style={{marginLeft:'10px'}} src={"twitterIcon.png"}/>
+                  </a>
+              </div>
           </div>
       </div>
 
