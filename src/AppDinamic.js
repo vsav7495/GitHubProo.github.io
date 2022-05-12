@@ -11,17 +11,16 @@ const AppDinamic = () => {
                 <img src={"photoHeader.png"}/>
             </div>
             <div className={"containerAboutMe"}>
-                <div className={"aboutMe_GoalsValuesHobbies"}>
+                <div className={"aboutMe_GoalsValuesHobbies aboutMeGoals"}>
                     <p className={"aboutMe"}>GOALS</p>
                     Life is like a combination lock; your job is to find the numbers,
                     in the right orders, so you can have anything you want. Brian Tracy ”
                 </div>
-                <div className={"aboutMe_GoalsValuesHobbies"}>
+                <div className={"aboutMe_GoalsValuesHobbies aboutMeValues"}>
                     <p className={"aboutMe"}>VALUES</p>
                     I enjoy my work
-
                 </div>
-                <div className={"aboutMe_GoalsValuesHobbies"}>
+                <div className={"aboutMe_GoalsValuesHobbies aboutMeHobbies"}>
                     <p className={"aboutMe"}>HOBBIES</p>
                     I love board games
                 </div>
@@ -40,7 +39,7 @@ const AppDinamic = () => {
                     <img src={"digibarber.png"}/>
                 </div>
                 <div className={"organic"}>
-                    <img src={"organic.png"}/>
+                    <img src={"organic.png"} className={"portfolioOrganicImg"}/>
                 </div>
             </div>
         </div>
