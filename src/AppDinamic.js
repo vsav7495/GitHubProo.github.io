@@ -13,8 +13,8 @@ const AppDinamic = () => {
             <div className={"containerAboutMe"}>
                 <div className={"aboutMe_GoalsValuesHobbies aboutMeGoals"}>
                     <p className={"aboutMe"}>GOALS</p>
-                    Life is like a combination lock; your job is to find the numbers,
-                    in the right orders, so you can have anything you want. Brian Tracy ”
+                    "Life is like a combination lock. Your job is to find the numbers,
+                    in the right orders, so you can have anything you want." <p>Brian Tracy </p>
                 </div>
                 <div className={"aboutMe_GoalsValuesHobbies aboutMeValues"}>
                     <p className={"aboutMe"}>VALUES</p>
@@ -23,6 +23,23 @@ const AppDinamic = () => {
                 <div className={"aboutMe_GoalsValuesHobbies aboutMeHobbies"}>
                     <p className={"aboutMe"}>HOBBIES</p>
                     I love board games
+                </div>
+            </div>
+            <div className={"containerMyEducation"}>
+                <div className={"photoMyEducation"}>
+                    <img src={"photoAboutMe.png"}/>
+                </div>
+                <div className={"myEducationInfo"}>
+                    <ul className={"ulEducation"}>
+                        <li>MY EDUCATION</li>
+                        <li  className={"liEducation"}> State University</li>
+                        <li  className={"liEducation"}>Department of Information Control Systems and Technologies</li>
+                        <li className={"liEducation"}>2005 - 2009</li>
+                        <li  className={"liEducation"}>Bachelor degree in Computer Science</li>
+                        <li  className={"liEducation"}>2009 - 2010</li>
+                        <li  className={"liEducation"}>Specialist degree in Computer Scienc</li>
+                        <li  className={"liEducation"}>English: Pre - Intermidiate</li>
+                    </ul>
                 </div>
             </div>
             <div className={"portfolioContent"}>

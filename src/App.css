@@ -148,7 +148,7 @@
     width: 700px;
     height: 1047px;
 }
-.myEducation{
+/*.myEducation{
     grid-area: myEducation;
     background-color: #f2f2f1;
     width: 900px;
@@ -160,7 +160,7 @@
 }
 .liEducation  {
     margin-top: 30px;
-}
+}*/
 .resume{
     grid-area: resume;
     width: 1600px;

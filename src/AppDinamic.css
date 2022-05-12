@@ -31,6 +31,10 @@ img{
                 'aboutMeGoals aboutMeValues aboutMeHobbies';
         max-width: 1600px;
     }
+    .containerMyEducation{
+        display: grid;
+        grid-template-areas: 'photoMyEducation myEducationInfo';
+    }
     .portfolioOrganicImg{
         height: 48%;
     }
@@ -55,6 +59,12 @@ img{
                 'aboutMeValues'
                 'aboutMeHobbies';
     }
+    .containerMyEducation{
+        display: grid;
+        grid-template-areas:
+                'photoMyEducation'
+                'myEducationInfo';
+    }
     .portfolioOrganicImg{
         height: 100%;
     }
@@ -75,8 +85,17 @@ img{
 .aboutMeHobbies{
     grid-area: aboutMeHobbies;
 }
-.containerMyEducation{
+.myEducationInfo{
+    grid-area: myEducationInfo;
+    background-color: #f2f2f1;
+}
+.ulEducation {
+    list-style-type: none;
+    font-size: 30px;
 
+}
+.liEducation  {
+    margin-top: 30px;
 }
 .containerSkills{
 
