@@ -1,0 +1,81 @@
+
+img{
+    width: 100%;
+}
+
+.wrapper{
+    justify-content: center;
+    background-color: white;
+
+}
+.containerHome{
+    display: grid;
+    max-width: 1600px;
+}
+.containerAboutMe{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1600px;
+}
+.aboutMe_GoalsValuesHobbies{
+    text-align: center;
+    font-size: large;
+    font-family: "Candara";
+    font-style: italic;
+}
+.containerMyEducation{
+
+}
+.containerSkills{
+
+}
+.containerTestimonials{
+
+}
+/*розширення екрану*/
+@media (min-width: 800px) {
+    .portfolioContent{
+        display: grid;
+        grid-template-areas:
+            'hublish llook greenHorn'
+            'digibarber organic organic';
+        grid-gap: 30px;
+        padding: 100px;
+    }
+}
+
+/*звуження екрану*/
+@media (max-width: 1200px) {
+    .portfolioContent{
+        display: grid;
+        grid-template-areas:
+            'hublish'
+            'llook'
+            'greenHorn'
+            'digibarber'
+            'organic';
+        grid-gap: 30px;
+        padding: 50px;
+    }
+}
+.hublish{
+    grid-area: hublish;
+}
+.llook{
+    grid-area: llook;
+}
+.greenHorn{
+    grid-area: greenHorn;
+}
+.digibarber{
+    grid-area: digibarber;
+}
+.organic{
+    grid-area: organic;
+}
+
+
+.containerContactMe{
+
+}
+
