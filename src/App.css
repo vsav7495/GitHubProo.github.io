@@ -201,14 +201,14 @@
 .skillsProfExperDescription{
     grid-area: skillsProfExperDescription;
 }
-.ulProf {
+/*.ulProf {
     list-style-type: none;
     font-size: 20px;
 
 }
 .liProf {
 
-}
+}*/
 .skillsCourseSql{
     grid-area: skillsCourseSql;
 }
@@ -234,30 +234,30 @@
 .skillsTechnologDescription{
     grid-area: skillsTechnologDescription;
 }
-.ulTech {
+/*.ulTech {
     list-style-type: none;
     font-size: 20px;
 
 }
 .liTech {
 
-}
+}*/
 .skillsDevTools{
     grid-area: skillsDevTools;
 }
 .skillsDevToolsDescription{
     grid-area: skillsDevToolsDescription;
 }
-.ulDev {
+/*.ulDev {
     list-style-type: none;
     font-size: 20px;
 
 }
 .liDev {
 
-}
+}*/
 
-.testimonials{
+/*.testimonials{
     grid-area: testimonials;
     background-color: #f2f2f1;
     margin-top: 50px;
@@ -270,15 +270,15 @@
     height: 200px;
     margin-left: 100px;
     margin-top: 80px;
-}
-.containerTextTestimonials{
+}*/
+/*.containerTextTestimonials{
     width: 1000px;
     margin-top: 100px;
     margin-left: 420px;
     font-size: 20px;
     font-style: italic;
     text-align: center;
-}
+}*/
 .containerPagination{
     position: relative;
     margin-top: 100px;

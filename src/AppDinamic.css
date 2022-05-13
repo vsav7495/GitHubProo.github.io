@@ -5,10 +5,12 @@ p.aboutMe{
 img{
     width: 100%;
 }
-
+.backgroundColorWhite{
+    background-color: white;
+}
 .wrapper{
     justify-content: center;
-    background-color: white;
+    background-color: #292624;
 
 }
 .containerHome{
@@ -17,7 +19,7 @@ img{
 }
 /*розширення екрану*/
 @media (min-width: 800px) {
-    .portfolioContent{
+    .portfolioContent {
         display: grid;
         grid-template-areas:
             'hublish llook greenHorn'
@@ -25,17 +27,25 @@ img{
         grid-gap: 30px;
         padding: 100px;
     }
-    .containerAboutMe{
+    .containerProfExperience{
         display: grid;
         grid-template-areas:
-                'aboutMeGoals aboutMeValues aboutMeHobbies';
+                'profExp profExpDescribe';
+    }
+    .containerMyEducation {
+        display: grid;
+        grid-template-areas:
+                'photoMyEducation myEducationInfo';
+    }
+    .containerSkillsTestimonials{
+        display: grid;
+        grid-template-areas:
+                'technologies technologiesDescription'
+                'devTools devToolsDescription'
+                'testimonialsPhoto testimonialsInfo';
         max-width: 1600px;
     }
-    .containerMyEducation{
-        display: grid;
-        grid-template-areas: 'photoMyEducation myEducationInfo';
-    }
-    .portfolioOrganicImg{
+    .portfolioOrganicImg {
         height: 48%;
     }
 }
@@ -52,12 +62,11 @@ img{
         grid-gap: 30px;
         padding: 50px;
     }
-    .containerAboutMe{
+    .containerProfExperiance{
         display: grid;
         grid-template-areas:
-                'aboutMeGoals'
-                'aboutMeValues'
-                'aboutMeHobbies';
+                'profExp'
+                'profExpDescribe';
     }
     .containerMyEducation{
         display: grid;
@@ -65,25 +74,32 @@ img{
                 'photoMyEducation'
                 'myEducationInfo';
     }
+    .containerSkillsTestimonials{
+        display: grid;
+        grid-template-areas:
+                'technologies'
+                'technologiesDescription'
+                'devTools'
+                'devToolsDescription'
+                'testimonialsPhoto'
+                'testimonialsInfo';
+    }
     .portfolioOrganicImg{
         height: 100%;
     }
 }
-.aboutMe_GoalsValuesHobbies{
-    text-align: center;
-    font-size: xx-large;
-    font-family: "Candara";
-    font-style: italic;
-    padding: 20px;
+.profExp{
+    grid-area: profExp;
 }
-.aboutMeGoals{
-    grid-area: aboutMeGoals;
+.profExpDescribe{
+    grid-area: profExpDescribe;
 }
-.aboutMeValues{
-    grid-area: aboutMeValues ;
+.ulProf {
+    list-style-type: none;
+    font-size: 20px;
 }
-.aboutMeHobbies{
-    grid-area: aboutMeHobbies;
+.liProf {
+
 }
 .myEducationInfo{
     grid-area: myEducationInfo;
@@ -92,18 +108,46 @@ img{
 .ulEducation {
     list-style-type: none;
     font-size: 30px;
-
 }
 .liEducation  {
     margin-top: 30px;
 }
-.containerSkills{
+.technologies{
+    grid-area: technologies;
+}
+.technologiesDescription{
+    grid-area: technologiesDescription;
+}
+.ulTech {
+    list-style-type: none;
+    font-size: 20px;
+}
+.liTech {
 
 }
-.containerTestimonials{
+.devTools{
+    grid-area: devTools;
+}
+.devToolsDescription{
+    grid-area: devToolsDescription;
+}
+.ulDev {
+    list-style-type: none;
+    font-size: 20px;
+}
+.liDev {
 
 }
-
+.testimonialsPhoto{
+    grid-area: testimonialsPhoto;
+}
+.testimonPhoto{
+    width: 80px;
+    height: 160px;
+}
+.testimonialsInfo{
+    grid-area: testimonialsInfo;
+}
 .hublish{
     grid-area: hublish;
 }
