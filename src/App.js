@@ -43,32 +43,37 @@ const AppDinamic = () => {
                 </div>
                 <div className={"myEducationInfo"}>
                     <ul className={"ulEducation"}>
-                        <li>MY EDUCATION</li>
+                        <li className={"liEducTitle"}>MY EDUCATION</li>
                         <li  className={"liEducation"}> State University</li>
-                        <li  className={"liEducation"}>Department of Information Control Systems and Technologies</li>
+                        <li  className={"liEd"}>Department of Information Control Systems and Technologies</li>
                         <li className={"liEducation"}>2005 - 2009</li>
-                        <li  className={"liEducation"}>Bachelor degree in Computer Science</li>
+                        <li  className={"liEd"}>Bachelor degree in Computer Science</li>
                         <li  className={"liEducation"}>2009 - 2010</li>
-                        <li  className={"liEducation"}>Specialist degree in Computer Scienc</li>
-                        <li  className={"liEducation"}>English: Pre - Intermidiate</li>
+                        <li  className={"liEd"}>Specialist degree in Computer Scienc</li>
+                        <li  className={"liEducation"}>English</li>
+                        <li className={"liEd"}>Pre - Intermidiate</li>
                     </ul>
+                    <button className={"buttonEducation"}>DOWNLOAD RESUME</button>
                 </div>
             </div>
-            <div className={"containerSkillsTestimonials backgroundColorWhite"}>
+            <div className={"containerSkills backgroundColorWhite"}>
                 <div className={"technologies"}>TECHNOLOGIES</div>
                 <div className={"technologiesDescription"}>
                     <ul className={"ulTech"}>
-                        <li className={"liTech"}>Objective-C:</li>
+                        <li>Objective-C:</li>
                         <li className={"liTech"}>AutoLayout</li>
                         <li className={"liTech"}>UIkit</li>
-                        <li className={"liTech"}>Swift:</li>
+                        <li>Swift:</li>
                         <li className={"liTech"}>Alomofire</li>
                         <li className={"liTech"}>UIkit</li>
                         <li className={"liTech"}>AutoLayout</li>
                         <li className={"liTech"}>FireBase</li>
                         <li className={"liTech"}>Push Notifications</li>
-                        <li className={"liTech"}>React Native/ReactJS:</li>
+                        <li>React Native:</li>
                         <li className={"liTech"}>Redux</li>
+                        <li>ReactJS:</li>
+                        <li className={"liTech"}>Redux</li>
+                        <li className={"liTech"}>Grids</li>
                     </ul>
                 </div>
                 <div className={"devTools"}>DEVELOPMENT TOOLS</div>
@@ -80,11 +85,13 @@ const AppDinamic = () => {
                         <li className={"liDev"}>Git (SourceTree, GitHub Desktop, Git Smart)</li>
                         <li className={"liDev"}>WebStorm</li>
                         <li className={"liDev"}>Visual Studio Code</li>
-                        <li className={"liDev"}>Postman</li>PostgreSQL
-                        <li className={"liDev"}>PostgreSQL</li>
+                        <li className={"liDev"}>Postman</li>
+                        <li className={"liDev"}>PostgresSQL</li>
                         <li className={"liDev"}>SQL Server Management Studio</li>
                     </ul>
                 </div>
+            </div>
+            <div className={"containerTestimonials"}>
                 <div className={"testimonialsPhoto"}>
                     <img src={"logoPhoto1.png"} className={"testimonPhoto"}/>
                 </div>
@@ -96,6 +103,7 @@ const AppDinamic = () => {
                             when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                         </text>
                     </div>
+                    <button className={"buttonTestimonials"}>GO TO WEB SITE</button>
                 </div>
             </div>
             <div className={"portfolioContent backgroundColorWhite"}>
@@ -129,13 +137,13 @@ const AppDinamic = () => {
             <div className={"containerContactMe"}>
                 <div className={"contactMe"}>
                     <ul className={"ulContactMe"}>
-                        <li className={"liContactMe"}> CONTACT ME</li>
-                        <li className={"liContactMe"}>
+                        <li className={"liContactMe titleText"}> CONTACT ME</li>
+                        <li className={"liContactMe titleText"}>
                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                             when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                         </li>
                         <li className={"liContactMe"}>122 33rd Street East</li>
-                        <li className={"liContactMe"}>Saskatoon, SK</li>
+                        <li className={"liContactMe titleText"}>Saskatoon, SK</li>
                         <li  className={"liContactMe"}><text >Email:   </text> info@gmail.com</li>
                         <li className={"liContactMe"}><text >Phone:  </text>Phone: 1-306-222-2323</li>
                         <li className={"liContactMe"}><text >Skype:  </text> InfoSkype</li>
@@ -152,17 +160,19 @@ const AppDinamic = () => {
                         <button className={"buttonForm"} type="submit">CONTACT ME</button>
                     </form>
                 </div>
+            </div>
+            <div className={"containerFoot"}>
                 <div className={"foot"}>
                     <div >COPYRIGHT 2022 BUILD WITH PASSION</div>
-                    {/*<a href="#linkedIn">
-                        <img src={"photolinkedin.png"}/>
+                    <a href="#linkedIn">
+                        <img src={"photolinkedin.png"} className={"socialIcon"}/>
                     </a>
                     <a href="#facebook">
-                        <img  src={"facebookIcon.png"}/>
+                        <img  src={"facebookIcon.png"} className={"socialIcon"}/>
                     </a>
-                    <a href="#twitter">
-                        <img  src={"twitterIcon.png"}/>
-                    </a>*/}
+                    <a href="#twitterIcon">
+                        <img  src={"twitterIcon.png"} className={"socialIcon"}/>
+                    </a>
                 </div>
             </div>
         </div>
