@@ -1,343 +1,200 @@
-
+p.aboutMe{
+    font-weight: bold;
+    font-size: xx-large;
+}
+img{
+    width: 100%;
+}
+.backgroundColorWhite{
+    background-color: white;
+}
 .wrapper{
     display: grid;
     justify-content: center;
-    background-color: #171b1e;
+    background-color: #292624;
+
 }
-.containerAboutMe{
+.containerHome{
     display: grid;
-    background-color: white;
-    grid-template-areas:
-            'photoHeader photoHeader photoHeader'
-            'headerNavMenu headerNavMenu headerNavMenu'
-            'aboutMeOne aboutMeTwo aboutMeThree'
-            'photoAboutMe myEducation myEducation'
-            'resume resume resume';
+    max-width: 1600px;
 }
-.containerSkills{
-    display: grid;
-    grid-template-columns: 300px 650px 650px;
-    background-color: white;
-    grid-template-areas:
-            'skillsProfExperience skillsProfExperDescription skillsProfExperDescription'
-            'skillsCourseSql skillsCourseSqlDescription skillsCourseSqlDescription'
-            'skillsTechnologies skillsTechnologDescription skillsTechnologDescription'
-            'skillsDevTools skillsDevToolsDescription skillsDevToolsDescription'
-            'testimonials testimonials testimonials';
+/*розширення екрану*/
+@media (min-width: 800px) {
+
+    .containerProfExperience{
+        display: grid;
+        grid-template-areas:
+                'profExp profExpDescribe';
+        max-width: 1600px;
+    }
+    .containerMyEducation {
+        display: grid;
+        grid-template-areas:
+                'photoMyEducation myEducationInfo';
+        max-width: 1600px;
+    }
+    .containerSkillsTestimonials{
+        display: grid;
+        grid-template-areas:
+                'technologies technologiesDescription'
+                'devTools devToolsDescription'
+                'testimonialsPhoto testimonialsInfo';
+        max-width: 1600px;
+    }
+    .portfolioContent {
+        display: grid;
+        grid-template-areas:
+            'portfolioDescription portfolioDescription portfolioDescription'
+            'hublish llook greenHorn'
+            'digibarber organic organic';
+        grid-gap: 30px;
+        padding: 100px;
+        max-width: 1400px;
+    }
+    .portfolioOrganicImg {
+        height: 48%;
+    }
+    .containerContactMe{
+        display: grid;
+        grid-template-areas:
+                'contactMe contactMeForm'
+                'foot foot';
+        color: #4b5456;
+        font-size: xx-large;
+        max-width: 1600px;
+        background-color: #252e30;
+    }
 }
-.containerPortfolio{
-    display: grid;
-    grid-template-columns: 600px 200px 600px;
-    grid-template-rows: 200px 1fr;
-    grid-row-gap: 20px;
-    background-color: white;
-    justify-items: center;
-    padding-left: 100px;
-    grid-template-areas:
-            'portfolio portfolio portfolio'
-            'portfolioGreenHorn portfolioLLOOK portfolioEcoKos'
-            'portfolioHublish portfolioDigibarber portfolioGalBud';
+/*звуження екрану*/
+@media (max-width: 1200px) {
+
+    .containerProfExperiance{
+        display: grid;
+        grid-template-areas:
+                'profExp'
+                'profExpDescribe';
+    }
+    .containerMyEducation{
+        display: grid;
+        grid-template-areas:
+                'photoMyEducation'
+                'myEducationInfo';
+    }
+    .containerSkillsTestimonials{
+        display: grid;
+        grid-template-areas:
+                'technologies'
+                'technologiesDescription'
+                'devTools'
+                'devToolsDescription'
+                'testimonialsPhoto'
+                'testimonialsInfo';
+    }
+    .portfolioContent{
+        display: grid;
+        grid-template-areas:
+            'portfolioDescription'
+            'hublish'
+            'llook'
+            'greenHorn'
+            'digibarber'
+            'organic';
+        grid-gap: 30px;
+        padding: 50px;
+    }
+    .portfolioOrganicImg{
+        height: 100%;
+    }
+    .containerContactMe{
+        display: grid;
+        grid-template-areas:
+                'contactMe'
+                'contactMeForm'
+                'foot';
+        color: #4b5456;
+        font-size: xx-large;
+        background-color: #252e30;
+    }
 }
-.containerContact{
-    display: grid;
-    grid-template-columns: 800px 800px;
-    background-color: #252e30;
-    grid-template-areas:
-            'contactMe contactMeForm contactMeForm'
-            'foot foot foot';
+.profExp{
+    grid-area: profExp;
 }
-.photoHeader{
-    grid-area: photoHeader;
-    width: 1600px;
-    height: 1219px;
+.profExpDescribe{
+    grid-area: profExpDescribe;
 }
-.headerTextWeb {
-    position: absolute;
-    width: 750px;
-    height: 90px;
-    margin-left: 500px;
-    margin-top: 750px;
-}
-.buttonLearnMore {
-    position: absolute;
-    width: 186px;
-    height: 56px;
-    margin-top: 900px;
-    margin-left: 750px;
-    background: unset;
-    border-color: white;
-}
-.TextOnButtonLearnMore {
-    color: white;
-    font-size: large;
-}
-.photoHome{
-    width: 1600px;
-    height: 1219px;
-}
-.logoPhoto{
-    position: absolute;
-    margin-left: 100px;
-    height: 50px;
-    margin-top: 10px;
-}
-.logoLinkedIn{
-    position: absolute;
-    margin-left: 135px;
-    margin-top: 25px;
-}
-.name{
-    position: absolute;
-    margin-left: 200px;
-    margin-top: 20px;
-}
-.nameText{
-    color: white;
-    font-family: "Arial";
-    font-size: xx-large;
-}
-.headerNavMenu{
-    grid-area: headerNavMenu;
-    height: 70px;
-    background: #252d2f;
-}
-.ulNav {
+.ulProf {
     list-style-type: none;
-    margin-left: 750px;
+    font-size: 20px;
 }
-.liNav {
-    float: left;
-    margin-right: 20px;
+.liProf {
+
 }
-.liNav a {
-    display: block;
-    color: white;
-    padding: 10px;
-    text-decoration: none;
-}
-.liNav a:hover {
-    color: #2ecc71;
-}
-.aboutMeOne{
-    grid-area: aboutMeOne;
-    padding-top: 20px;
-    text-align: center;
-    width: 700px;
-    height: 150px;
-}
-.aboutMeTwo{
-    grid-area: aboutMeTwo;
-    padding-top: 20px;
-    text-align: center;
-    width: 450px;
-    height: 150px;
-}
-.aboutMeThree{
-    grid-area: aboutMeThree;
-    padding-top: 20px;
-    text-align: center;
-    width: 450px;
-    height: 150px;
-}
-.textAboutMe{
-    font-style: italic;
-    font-size: 30px;
-}
-.photoAboutMe{
-    grid-area: photoAboutMe;
-    width: 700px;
-    height: 1047px;
-}
-/*.myEducation{
-    grid-area: myEducation;
+.myEducationInfo{
+    grid-area: myEducationInfo;
     background-color: #f2f2f1;
-    width: 900px;
 }
 .ulEducation {
     list-style-type: none;
     font-size: 30px;
-
 }
 .liEducation  {
     margin-top: 30px;
-}*/
-.resume{
-    grid-area: resume;
-    width: 1600px;
 }
-.textResume {
-    position: absolute;
-    margin-top: 30px;
-    margin-left: 750px;
-    font-size: 25px;
-    font-weight: bold;
+.technologies{
+    grid-area: technologies;
 }
-.containerTextResume{
-    position: absolute;
-    width: 1200px;
-    margin-top: 80px;
-    margin-left: 200px;
-    text-align: center;
-    font-size: 20px;
-    font-style: italic;
+.technologiesDescription{
+    grid-area: technologiesDescription;
 }
-.buttonDownloadResume {
-    position: absolute;
-    width: 215px;
-    height: 56px;
-    margin-top: 300px;
-    margin-left: 700px;
-    background: unset;
-    border-color: #2ecc71;
-    color: #2ecc71;
-    font-size: large;
-}
-
-.skillsProfExperience{
-    grid-area: skillsProfExperience;
-    width: 300px;
-    height: 225px;
-}
-.skillsProfExperDescription{
-    grid-area: skillsProfExperDescription;
-}
-/*.ulProf {
+.ulTech {
     list-style-type: none;
     font-size: 20px;
-
-}
-.liProf {
-
-}*/
-.skillsCourseSql{
-    grid-area: skillsCourseSql;
-}
-.certificateLogo{
-    margin-top: 40px;
-    width: 200px;
-    height: 100px;
-}
-.skillsCourseSqlDescription{
-    grid-area: skillsCourseSqlDescription;
-}
-.ulCourse {
-    list-style-type: none;
-    font-size: 20px;
-
-}
-.liCourse {
-
-}
-.skillsTechnologies{
-    grid-area: skillsTechnologies;
-}
-.skillsTechnologDescription{
-    grid-area: skillsTechnologDescription;
-}
-/*.ulTech {
-    list-style-type: none;
-    font-size: 20px;
-
 }
 .liTech {
 
-}*/
-.skillsDevTools{
-    grid-area: skillsDevTools;
 }
-.skillsDevToolsDescription{
-    grid-area: skillsDevToolsDescription;
+.devTools{
+    grid-area: devTools;
 }
-/*.ulDev {
+.devToolsDescription{
+    grid-area: devToolsDescription;
+}
+.ulDev {
     list-style-type: none;
     font-size: 20px;
-
 }
 .liDev {
 
-}*/
-
-/*.testimonials{
-    grid-area: testimonials;
+}
+.testimonialsPhoto{
+    grid-area: testimonialsPhoto;
     background-color: #f2f2f1;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    height: 420px;
 }
-.testimonialsPhoto1{
-    float: left;
-    width: 200px;
-    height: 200px;
-    margin-left: 100px;
-    margin-top: 80px;
-}*/
-/*.containerTextTestimonials{
-    width: 1000px;
-    margin-top: 100px;
-    margin-left: 420px;
-    font-size: 20px;
-    font-style: italic;
-    text-align: center;
-}*/
-.containerPagination{
-    position: relative;
-    margin-top: 100px;
-    margin-left: 800px;
+.testimonPhoto{
+    width: 80px;
+    height: 160px;
 }
-.circlePagination {
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    border: 2px solid #2ecc71;
-    border-radius: 100%;
+.testimonialsInfo{
+    grid-area: testimonialsInfo;
+    background-color: #f2f2f1;
 }
-.activePagination {
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    border: 2px solid #2ecc71;
-    border-radius: 100%;
-    background-color: #2ecc71;
+.portfolioDescription{
+    grid-area: portfolioDescription;
 }
-
-.portfolio{
-    grid-area: portfolio;
-
+.hublish{
+    grid-area: hublish;
 }
-.containerTextPortfolio{
-    width: 1200px;
-    margin-top: 20px;
-    text-align: center;
-    font-size: 20px;
+.llook{
+    grid-area: llook;
 }
-.portfolioGreenHorn{
-    grid-area: portfolioGreenHorn;
-
+.greenHorn{
+    grid-area: greenHorn;
 }
-.portfolioLLOOK{
-    grid-area: portfolioLLOOK;
+.digibarber{
+    grid-area: digibarber;
 }
-.portfolioEcoKos{
-    grid-area: portfolioEcoKos;
-}
-.portfolioHublish{
-    grid-area: portfolioHublish;
-}
-.portfolioDigibarber{
-    grid-area: portfolioDigibarber;
-
-}
-.portfolioGalBud{
-    grid-area: portfolioGalBud;
-    margin-bottom: 50px;
-}
-.contactMe{
-    grid-area: contactMe;
-    height: 800px;
-    color: #4b5456;
-    font-size: xx-large;
-    margin-left: 100px;
-    padding-top: 90px;
+.organic{
+    grid-area: organic;
 }
 .ulContactMe {
     list-style-type: none;
@@ -345,6 +202,12 @@
 }
 .liContactMe {
 
+}
+.contactMe{
+    grid-area: contactMe;
+    color: #4b5456;
+    font-size: xx-large;
+    padding-top: 90px;
 }
 .contactMeForm{
     grid-area: contactMeForm;
@@ -354,11 +217,9 @@
 form {
     display: flex;
     flex-direction: column;
-    width: 540px;
     height: 660px;
     color: white;
     font-size: 20px;
-    margin-left: 100px;
 }
 label{
     margin-top: 50px;
@@ -396,10 +257,3 @@ textarea{
     text-align: center;
 
 }
-
-
-
-
-
-
-
