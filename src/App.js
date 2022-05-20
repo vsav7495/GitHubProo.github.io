@@ -1,47 +1,40 @@
 import React from "react";
-
 import './App.css';
-
-/*<div className={"containerProfExperience backgroundColorWhite"}>
-    <div className={"profExp"}>
-        PROFESSIONAL EXPERIENCE
-    </div>
-    <div className={"profExpDescribe"}>
-        <ul className={"ulProf"}>
-            <li className={"liProfTitle"}>November 2019 - July 2020, software company “Company”</li>
-            <li className={"liProfDev"}>ReactJS Developer:</li>
-            <li className={"liProfDescription"}>Development of geolocation service for tracking ships routes and
-                arrival - departure time.</li>
-            <li className={"liProfDev"}>React Native Developer:</li>
-            <li className={"liProfDescription"}>Development of social network experience exchange of sportsman
-                and scouts.</li>
-            <li className={"liProfTitle"}>May 2019 - November 2019, software company “Company”</li>
-            <li className={"liProfDev"}>IOS Developer:</li>
-            <li className={"liProfDescription"}>Development of mobile applications for social networks
-                (programming client API and user interface).</li>
-            <li className={"liProfDescription"}>Development of e-commerce application for private entrepreneurs
-                (online store, mobile platform for finding services and customers)</li>
-            <li className={"liProfTitle"}>August 2020 - October 2020, participated in a test task at the academy "SoftServe"</li>
-            <li className={"liProfDev"}>SQL Server Management Studio:</li>
-            <li className={"liProfDescription"}>Data Base in market</li>
-            <li className={"liProfTitle"}>September - October 2020 SQL.ua Data Academy Online Marathon
-                <a href={""}>(Course)</a>.
-            </li>
-            <li className={"liProfDev"}>Postgres:</li>
-            <li className={"liProfDescription"}>Basic knowledge SQL</li>
-            <li className={"liProfTitle"}> 2021 - until today freelance web develop</li>
-            <li className={"liProfDev"}>React Js:</li>
-            <li className={"liProfDescription"}>Programming user interface</li>
-        </ul>
-    </div>
-</div>*/
 
 const AppDinamic = () => {
 
     return (
         <div  className={"wrapper"}>
             <div className={"containerHome"}>
-                <img src={"photoHeader.png"} className={"hundred"}/>
+                <div className={"photoHeader"}>
+                    <img src={"photoHeader.png"} className={"hundred"}/>
+                </div>
+               {/* <div className={"contHeader"}>
+                    <img  className={"headerTextWeb"} src={"HeaderWebDev.png"}/>
+                    <button className={"buttonLearnMore"}>
+                        <text className={"TextOnButtonLearnMore"}>LEARN MORE</text>
+                    </button>
+                </div>*/}
+                <div className={"headerNavMenu"}>
+                    <div className={"headerLogo"}>
+                        <img  className={"logoPhoto"} src={"logoPhoto.png"}/>
+                        <a href="#logoLinkedIn">
+                            <img  className={"logoLinkedIn"} src={"photolinkedin.png"}/>
+                        </a>
+                        <div className={"nameText"}>Developer</div>
+                    </div>
+                    <div>
+                        <ul className={"ulNav"}>
+                            <li className={"liNav"}><a href="#home">HOME</a></li>
+                            <li  className={"liNav"}><a href="#aboutMe">ABOUT ME</a></li>
+                            <li  className={"liNav"}><a href="#resume">RESUME</a></li>
+                            <li  className={"liNav"}><a href="#skills">SKILLS</a></li>
+                            <li  className={"liNav"}><a href="#resume">TESTIMONIALS</a></li>
+                            <li  className={"liNav"}><a href="#portfolio">PORTFOLIO</a></li>
+                            <li  className={"liNav"}><a href="#contactMe">CONTACT ME</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <div className={"containerProfExperience backgroundColorWhite"}>
                 <div className={"profExperience"}>

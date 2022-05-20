@@ -19,12 +19,63 @@ img.socialIcon{
     background-color: #292624;
 
 }
-.containerHome{
-    display: grid;
-    max-width: 1600px;
-}
 /*розширення екрану*/
 @media (min-width: 1200px) {
+    .containerHome{
+        display: grid;
+        grid-template-areas:
+            'photoHeader photoHeader'
+            'headerNavMenu headerNavMenu';
+
+        max-width: 1600px;
+    }
+    .photoHeader{
+        grid-area: photoHeader;
+    }
+    .headerNavMenu{
+        grid-area: headerNavMenu;;
+        height: 70px;
+        background: #252d2f;
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+    .headerLogo{
+        float: left;
+    }
+    .logoLinkedIn{
+        position: absolute;
+        margin-top: 15px;
+        padding-left: 30px;
+        width: 45px;
+    }
+    .logoPhoto{
+        margin-top: 10px;
+        position: absolute;
+        width: 45px;
+    }
+    .nameText {
+        margin-top: 20px;
+        margin-left: 100px;
+        color: white;
+        font-family: "Arial";
+        font-size: xx-large;
+    }
+    .ulNav{
+        float: right;
+        list-style-type: none;
+    }
+    .liNav {
+        float: left;
+    }
+    .liNav a {
+        display: block;
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+    }
+    .liNav a:hover {
+        color: #2ecc71;
+    }
     .containerProfExperience{
         display: grid;
         grid-template-areas:
@@ -135,7 +186,6 @@ img.socialIcon{
 }
 /*звуження екрану*/
 @media (max-width: 1200px) {
-
     .containerProfExperience{
         display: grid;
         grid-template-areas:
@@ -236,6 +286,32 @@ img.socialIcon{
         background-color: #252e30;
     }
 }
+
+.headerTextWeb {
+    position: absolute;
+    margin-left: 500px;
+    margin-top: 750px;
+    width: 750px;
+    height: 90px;
+}
+.contHeader{
+    grid-area: contHeader;
+    width: 1600px;
+}
+.buttonLearnMore {
+    position: absolute;
+    margin-top: 900px;
+    margin-left: 750px;
+    width: 186px;
+    height: 56px;
+    background: unset;
+    border-color: white;
+}
+.TextOnButtonLearnMore {
+    color: white;
+    font-size: large;
+}
+
 .sqlCertificate{
     grid-area: sqlCertificate;
     text-align: center;
