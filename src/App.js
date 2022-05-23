@@ -32,6 +32,15 @@ const AppDinamic = () => {
                             <li  className={"liNav"}><a href="#resume">TESTIMONIALS</a></li>
                             <li  className={"liNav"}><a href="#portfolio">PORTFOLIO</a></li>
                             <li  className={"liNav"}><a href="#contactMe">CONTACT ME</a></li>
+                            <ul className={"ulNav"}>
+                                <li className={"liNav"}><a href="#home">HOME</a></li>
+                                <li  className={"liNav"}><a href="#aboutMe">ABOUT ME</a></li>
+                                <li  className={"liNav"}><a href="#resume">RESUME</a></li>
+                                <li  className={"liNav"}><a href="#skills">SKILLS</a></li>
+                                <li  className={"liNav"}><a href="#resume">TESTIMONIALS</a></li>
+                                <li  className={"liNav"}><a href="#portfolio">PORTFOLIO</a></li>
+                                <li  className={"liNav"}><a href="#contactMe">CONTACT ME</a></li>
+                            </ul>
                         </ul>
                     </div>
                 </div>
